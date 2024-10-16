@@ -1,35 +1,30 @@
 module.exports = (sequelize, Sequelize) => {
 	const Empleado = sequelize.define('empleado', {
 		id_emp: {
-			type: Sequelize.INTEGER,
-			autoIncrement: true,
-			primaryKey: true
-		},
-		nombre: {
-			type: Sequelize.STRING,
-			allowNull: false
-		},
-		apellido: {
-			type: Sequelize.STRING,
-			allowNull: false
-		},
+            type: Sequelize.INTEGER,
+            autoIncrement: true,
+            primaryKey: true
+        },
+        nombre: {
+            type: Sequelize.STRING,
+        },
+        apellido: {
+            type: Sequelize.STRING,
+            allowNull: false
+        },
 		rol: {
-			type: Sequelize.STRING,
-			allowNull: false
+			type: Sequelize.STRING
 		},
 		correo: {
-			type: Sequelize.STRING,
-			allowNull: false,
-			unique: true
+			type: Sequelize.STRING
 		},
 		sueldo: {
-			type: Sequelize.DOUBLE,
-			allowNull: false
+			type: Sequelize.DOUBLE
 		},
-		fechaCreacion: {
-			type: Sequelize.DATE,
-			defaultValue: Sequelize.NOW
-		}
+        fechaCreacion: {
+            type: Sequelize.DATE,
+            defaultValue: Sequelize.NOW
+        }
 	});
 
 	return Empleado;
