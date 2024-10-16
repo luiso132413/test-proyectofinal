@@ -23,7 +23,7 @@ module.exports = (sequelize, Sequelize) => {
 			unique: true
 		},
 		sueldo: {
-			type: Sequelize.DECIMAL(10, 2),
+			type: Sequelize.DOUBLE,
 			allowNull: false
 		},
 		fechaCreacion: {
