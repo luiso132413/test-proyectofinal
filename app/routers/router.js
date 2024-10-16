@@ -2,7 +2,7 @@
 let express = require('express');
 let router = express.Router();
  
-const usuario = require('../controllers/usuario.controller.js');
+/*const usuario = require('../controllers/usuario.controller.js');*/
 const empleado = require('../controllers/empleado.controller.js');
 
 /*Ruta de usuarios
